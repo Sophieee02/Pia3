@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Guessing Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: lightpink;
+            transition: background-color 0.5s ease;
+        }
+        #game-container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+        }
+        h1 {
+            color: #d63384;
+        }
+        input {
+            padding: 10px;
+            width: 80%;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #d63384;
+            color: white;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #b02568;
+        }
+        #result {
+            font-size: 18px;
+            margin-top: 15px;
+            background:none !important;
+        }
+        #hint {
+            font-style: italic;
+            color: blue;
+            margin-bottom: 10px;
+        }
+        .win {
+            background-color: lightgreen !important;
+        }
+        .lose {
+            background-color: lightcoral !important;
+        }
+        
+        html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightpink;
+    transition: background-color 0.5s ease;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100vh;
+}
+
+#game-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+}
+
+        
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="game-container">
+            <h1>Word Guessing Game</h1>
+            <p>Guess the secret word!</p>
+            <p id="hint"></p>
+            <input type="text" id="guessInput" placeholder="Enter your guess">
+            <button id="submitBtn">Submit</button>
+            <p id="result"></p>
+            <button id="restartBtn" style="display: none;">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
